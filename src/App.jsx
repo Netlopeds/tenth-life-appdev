@@ -12,7 +12,7 @@ import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
 import { CartProvider } from './functions/CartContext.jsx';
 
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import Welcome from "./pages/welcome.jsx";
 import Shop from './pages/shop.jsx';
 import About from './pages/aboutus.jsx';
