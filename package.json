@@ -1,6 +1,6 @@
 {
   "name": "cicsproject",
-  "homepage": "https://netlopeds.github.io/tenth-life-appdev/",
+  "homepage": "https://netlopeds.github.io/tenth-life-appdev",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "Npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "bootstrap": "^5.3.5",
