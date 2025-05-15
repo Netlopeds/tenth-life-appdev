@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'Peace Sans';
+  src: url('/Fonts/Peace-Sans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Genty Sans';
+  src: url('/Fonts/genty-sans-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Arabic';
+  src: url('/Fonts/Montserrat-Arabic Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat Arabic';
+  src: url('/Fonts/Montserrat-Arabic Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+#shop_banner {
+  background-image: url('/Images/shop_banner.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 96.5vw;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#banner-text {
+  font-size: 5rem;
+  font-family: 'Peace Sans';
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); 
+}
+
+.search-icon{
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.custom-search-bar {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.custom-search-bar input {
+  width: 100%;
+  padding: 0.75rem 3.5rem 0.75rem 1.25rem;
+  border-radius: 50px;
+  border: none;
+  font-family: 'Genty Sans';
+  font-size: 1rem;
+  outline: none;
+}
+
+.custom-search-bar .search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ff914d;
+  border-radius: 50%;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-search-bar .search-icon img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+}
+
+.search-icon:hover {
+  transform: translateY(-60%); 
+  background-color: #ff7a26;  
+}
+
+.shop-body {
+  background-color: #fffdf0;
+}
+
+.shop-inner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-item {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: opacity 0.2s ease-in-out;
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18); 
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-image:hover {
+  opacity: 0.7;
+}
+
+.product-info {
+  padding: 0.75rem 0.9rem 0 0.9rem;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+  font-family: 'Genty Sans';
+}
+
+.product-price {
+  font-weight: bold;
+  font-size: 0.95rem;
+  font-family: 'Montserrat Arabic';
+}
+
+.product-item:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.add-button {
+  background-color: #ff914d;
+  border: none;
+  border-radius: 50px;
+  padding: 0.35rem 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Genty Sans';
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+  color: #fff;
+}
+
+.add-button:hover {
+  transform: translateY(-2px);
+}
+
+.add-button img {
+  width: 16px;
+  height: 16px;
+}
+
+.add-text {
+  font-weight: 500;
+}

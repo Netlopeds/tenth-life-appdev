@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Open Sauce';
+    src: url('/Fonts/Open-Sauce.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Bold';
+    src: url('/Fonts/TT-Norms-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Light';
+    src: url('/Fonts/TT-Norms-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.about-body {
+    background-color: #fffdf0;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+.about-header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.subtitle {
+    font-family: "TT Norms Light";
+    text-transform: uppercase;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-family: "TT Norms Bold";
+    font-size: 32px;
+    font-weight:bolder;
+    color: #0f2719;
+    position: relative;
+    display: inline-block;
+}
+
+.underline {
+    width: 80px;
+    height: 6px;
+    background-color: #ffc107;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+/* Carousel */
+.about-carousel {
+    padding-bottom: 60px;
+    overflow: visible;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #3ba1c8;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: none;
+}
+
+.about-carousel .carousel-item {
+    overflow: visible;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 50px;
+}
+
+.testimonial-card,
+.testimonial-card-side {
+    width: 280px;
+    height: 380px;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    text-align: left;
+    z-index: 1;
+}
+
+.testimonial-card.middle {
+    height: 440px;
+    transform: scale(1.08);
+    z-index: 2;
+}
+.testimonial-card.middle:hover {
+    transform: scale(1.15);
+}
+
+.testimonial-card-side:hover {
+    transform: scale(1.15);
+}
+
+.testimonial-card-side.blurred,
+.testimonial-card.blurred {
+    filter: blur(5px);
+    opacity: 0.6;
+    pointer-events: none;
+}
+.quote-icon {
+    font-size: 100px;
+    color: #8f4825;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.testimonial-text {
+    font-family: "Open Sauce";
+    font-size: 18px;
+    color: #444;
+    margin: -30px 0 20px;
+    text-align: justify;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.profile-name .last-name {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.profile-name .first-name {
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+}
+
+.bot-left-squig {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    max-width: 60vw;
+    z-index: 0;
+    pointer-events: none;
+    transform: rotate(-15deg);
+    transform-origin: bottom left;
+}
+
+.bot-right-loop {
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    width: 340px;
+    max-width: 65vw;
+    z-index: 0;
+    pointer-events: none;
+    transform: rotate(-5deg);
+    transform-origin: bottom right;
+}
+
+@media (max-width: 768px) {
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bot-left-squig {
+        width: 100px;
+    }
+
+    .bot-right-loop {
+        width: 120px;
+    }
+
+    .testimonial-card,
+    .testimonial-card-side,
+    .testimonial-card.middle {
+        width: 90%;
+        height: auto;
+    }
+}
