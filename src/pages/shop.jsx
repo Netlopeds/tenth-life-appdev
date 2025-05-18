@@ -6,24 +6,24 @@ import search from './function.jsx';
 import { useCart } from '../functions/CartContext';
 import { Modal } from 'react-bootstrap';
 
-// Import images
-import catWand from '/Images/Products/cat_wand.webp';
-import catFood from '/Images/Products/cat_food.webp';
-import catMouse from '/Images/Products/cat_mouse.webp';
-import catTreat from '/Images/Products/cat_treat.webp';
-import wasteBag from '/Images/Products/waste-bag.webp';
-import deodorizationBox from '/Images/Products/deodorization-box.webp';
-import garbageBag from '/Images/Products/garbage-bag.jpg';
-import catTreats from '/Images/Products/cat-treats.png';
-import catFountain from '/Images/Products/cat-fountain.png';
-import catLitterCube from '/Images/Products/cat-litter-cube.webp';
-import catDryingBox from '/Images/Products/cat-drying-box.png';
-import floormat from '/Images/Products/NewPetreeGen2FloormatSquare2_1024x1024.png';
+// Import images from src/assets/Products
+import catWand from '../assets/Products/cat_wand.webp';
+import catFood from '../assets/Products/cat_food.webp';
+import catMouse from '../assets/Products/cat_mouse.webp';
+import catTreat from '../assets/Products/cat_treat.webp';
+import wasteBag from '../assets/Products/waste-bag.webp';
+import deodorizationBox from '../assets/Products/deodorization-box.webp';
+import garbageBag from '../assets/Products/garbage-bag.jpg';
+import catTreats from '../assets/Products/cat-treats.png';
+import catFountain from '../assets/Products/cat-fountain.png';
+import catLitterCube from '../assets/Products/cat-litter-cube.webp';
+import catDryingBox from '../assets/Products/cat-drying-box.png';
+import floormat from '../assets/Products/NewPetreeGen2FloormatSquare2_1024x1024.png';
 
-import magnifyingGlass from '/Images/magnifying-glass.png';
-import shoppingBag from '/Images/shopping-bag.png';
+// Import icons from public/Images (these can stay as is)
+const magnifyingGlass = `${import.meta.env.BASE_URL}Images/magnifying-glass.png`;
+const shoppingBag = `${import.meta.env.BASE_URL}Images/shopping-bag.png`;
 
-// Update your products array to use the imported images
 const products = [
   { name: "Cat Wand", price: 5.0, image: catWand },
   { name: "Cat Food (M)", price: 10.5, image: catFood },
