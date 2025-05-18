@@ -13,7 +13,7 @@ const products = [
   { name: "Cat Catnip Chew Toy", price: 15.0, image: "cat_mouse.webp" },
   { name: "Cat Treat 5-pack", price: 3.0, image: "cat_treat.webp" },
   { name: "Waste Bag for Petree 2.0 Litter Box", price: 10.0, image: "waste-bag.webp" },
-  { name: "Petree Deodorization Box Smell Remover (Pack of 2)", price: 20.0, image: "Deodorization Box.webp" },
+  { name: "Petree Deodorization Box Smell Remover (Pack of 2)", price: 20.0, image: "deodorization-box.webp" },
   { name: "Pet Marvel Waste Bag", price: 5.0, image: "garbage-bag.jpg" },
   { name: "Ciao Churu Cat Treats (14g x 20 pcs per pack)", price: 3.0, image: "cat-treats.png" },
   { name: "Petkit Eversweet 3 Pro Wireless Cat Fountain", price: 80.0, image: "cat-fountain.png" },
