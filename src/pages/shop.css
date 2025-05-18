@@ -1,32 +1,32 @@
 @font-face {
   font-family: 'Peace Sans';
-  src: url('/Fonts/Peace-Sans.ttf') format('truetype');
+  src: url('../Fonts/Peace-Sans.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Genty Sans';
-  src: url('/Fonts/genty-sans-regular.ttf') format('truetype');
+  src: url('../Fonts/genty-sans-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat Arabic';
-  src: url('/Fonts/Montserrat-Arabic Regular.ttf') format('truetype');
+  src: url('../Fonts/Montserrat-Arabic Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat Arabic';
-  src: url('/Fonts/Montserrat-Arabic Bold.ttf') format('truetype');
+  src: url('../Fonts/Montserrat-Arabic Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 #shop_banner {
-  background-image: url('/Images/shop_banner.webp');
+  background-image: url('../Images/shop_banner.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

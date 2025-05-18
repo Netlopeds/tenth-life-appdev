@@ -47,7 +47,7 @@ function Shop() {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
             <span className="search-icon">
-              <img src="/Images/magnifying-glass.png" alt="Search" />
+              <img src={`${import.meta.env.BASE_URL}Images/magnifying-glass.png`} alt="Search" />
             </span>
           </div>
         </div>
@@ -58,7 +58,7 @@ function Shop() {
               <Col key={idx} md={3} sm={6}>
                 <div className="product-item">
                   <img
-                    src={`/Images/Products/${product.image}`}
+                    src={`${import.meta.env.BASE_URL}Images/Products/${product.image}`}
                     alt={product.name}
                     className="product-image"
                   />
@@ -76,7 +76,7 @@ function Shop() {
                           setShowModal(true); 
                         }}
                       >
-                        <img src="/Images/shopping-bag.png" alt="Add" />
+                        <img src={`${import.meta.env.BASE_URL}Images/shopping-bag.png`} alt="Add" />
                         <span className="add-text">ADD</span>
                       </Button>
                     </div>
@@ -100,7 +100,7 @@ function Shop() {
     {selectedProduct && (
       <>
         <img
-          src={`/Images/Products/${selectedProduct.image}`}
+          src={`${import.meta.env.BASE_URL}Images/Products/${selectedProduct.image}`}
           alt={selectedProduct.name}
           style={{
             width: '120px',

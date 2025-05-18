@@ -86,7 +86,7 @@ function CheckoutPage() {
       <Navbar bg="transparent" className="mb-4">
         <Container>
           <Navbar.Brand as={Link} to="/welcome" className="d-flex align-items-center">
-            <Image src="/Images/Logo.webp" width="40" height="40" className="me-2" />
+            <Image src={`${import.meta.env.BASE_URL}Images/Logo.webp`} width="40" height="40" className="me-2" />
             <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#000' }}>Tenth Life</span>
           </Navbar.Brand>
         </Container>
@@ -120,13 +120,19 @@ function CheckoutPage() {
             <p style={{ fontWeight: 'bold', color: '#333' }}>Pay with:</p>
             <Row className="mb-3">
               <Col>
-                <Button variant="light" className="w-100 border d-flex justify-content-center align-items-center gap-2" onClick={() => handlePayment('QRPAY')} disabled={cartItems.length === 0}><img src="/Images/QR PH.png" alt="QRPAY" style={{ height: '24px' }} /></Button>
+                <Button variant="light" className="w-100 border d-flex justify-content-center align-items-center gap-2" onClick={() => handlePayment('QRPAY')} disabled={cartItems.length === 0}>
+                  <img src={`${import.meta.env.BASE_URL}Images/QR PH.png`} alt="QRPAY" style={{ height: '24px' }} />
+                </Button>
               </Col>
               <Col>
-                <Button variant="primary" className="w-100 d-flex justify-content-center align-items-center gap-2" onClick={() => handlePayment('GCASH')} disabled={cartItems.length === 0}><img src="/Images/GCASH.png" alt="Gcash" style={{ height: '24px' }} /><span>GCASH</span></Button>
+                <Button variant="primary" className="w-100 d-flex justify-content-center align-items-center gap-2" onClick={() => handlePayment('GCASH')} disabled={cartItems.length === 0}>
+                  <img src={`${import.meta.env.BASE_URL}Images/GCASH.png`} alt="Gcash" style={{ height: '24px' }} /><span>GCASH</span>
+                </Button>
               </Col>
               <Col>
-                <Button variant="dark" className="w-100 d-flex justify-content-center align-items-center gap-2" onClick={() => handlePayment('GPAY')} disabled={cartItems.length === 0}><img src="/Images/Gpay.png" alt="Gpay" style={{ height: '24px' }} /></Button>
+                <Button variant="dark" className="w-100 d-flex justify-content-center align-items-center gap-2" onClick={() => handlePayment('GPAY')} disabled={cartItems.length === 0}>
+                  <img src={`${import.meta.env.BASE_URL}Images/Gpay.png`} alt="Gpay" style={{ height: '24px' }} />
+                </Button>
               </Col>
             </Row>
             <div className="text-center mb-3"><strong style={{ color: '#666' }}>OR</strong></div>
@@ -166,7 +172,7 @@ function CheckoutPage() {
                 {cartItems.map((item, index) => (
                   <div key={index} className="mb-3 d-flex align-items-center justify-content-between">
                     <div className="d-flex align-items-center">
-                      <img src={`/Images/Products/${item.image}`} alt={item.name} style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '8px', marginRight: '10px' }} />
+                      <img src={`${import.meta.env.BASE_URL}Images/Products/${item.image}`} alt={item.name} style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '8px', marginRight: '10px' }} />
                       <div>
                         <strong>{item.name}</strong>
                         <div>Qty: {item.quantity}</div>

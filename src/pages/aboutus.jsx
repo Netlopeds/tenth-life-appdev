@@ -39,7 +39,7 @@ function About() {
                                 Cats are like humans to others. That's why we make sure to give a life worth meowing for.
                             </p>
                             <div className="profile">
-                                <img src="public/Images/Members/KelvinPFP.jpg" className="profile-pic" alt="Kelvin" />
+                                <img src={`${import.meta.env.BASE_URL}Images/Members/KelvinPFP.jpg`} className="profile-pic" alt="Kelvin" />
                                 <div className="profile-name">
                                     <span className="last-name">GUILLERMO,</span>
                                     <span className="first-name">Kelvin Yuan M.</span>
@@ -58,7 +58,7 @@ function About() {
                                 Dedicated to seeing cat owners and their pets to create wonderful and memorable meow-ments together.
                             </p>
                             <div className="profile">
-                                <img src="public/Images/Members/Perez.PNG" className="profile-pic" alt="Neil" />
+                                <img src={`${import.meta.env.BASE_URL}Images/Members/Perez.PNG`} className="profile-pic" alt="Neil" />
                                 <div className="profile-name">
                                     <span className="last-name">PEREZ,</span>
                                     <span className="first-name">Neil Sam R.</span>
@@ -77,7 +77,7 @@ function About() {
                                 I joined this project to ensure that cats receive the care, love, and attention they deserve.
                             </p>
                             <div className="profile">
-                                <img src="public/Images/Members/Marco.jpg" className="profile-pic" alt="Marco" />
+                                <img src={`${import.meta.env.BASE_URL}Images/Members/Marco.jpg`} className="profile-pic" alt="Marco" />
                                 <div className="profile-name">
                                     <span className="last-name">ARANTE,</span>
                                     <span className="first-name">Marco C.</span>
@@ -99,7 +99,7 @@ function About() {
                                I joined this project to ensure that cats receive the care, love, and attention they deserve.
                             </p>
                             <div className="profile">
-                                <img src="public/Images/Members/Marco.jpg" className="profile-pic" alt="Marco" />
+                                <img src={`${import.meta.env.BASE_URL}Images/Members/Marco.jpg`} className="profile-pic" alt="Marco" />
                                 <div className="profile-name">
                                     <span className="last-name">ARANTE,</span>
                                     <span className="first-name">Marco C.</span>
@@ -118,7 +118,7 @@ function About() {
                                 Dedicated to make a difference, one purr at a time to provide cats and their owners love and warmth.
                             </p>
                             <div className="profile">
-                                <img src="public/Images/Members/IMG_1809.JPG" className="profile-pic" alt="Audrey" />
+                                <img src={`${import.meta.env.BASE_URL}Images/Members/IMG_1809.JPG`} className="profile-pic" alt="Audrey" />
                                 <div className="profile-name">
                                     <span className="last-name">BUGAYONG,</span>
                                     <span className="first-name">Mikhaella Audrey G.</span>
@@ -137,7 +137,7 @@ function About() {
                                 Cats should be seen as family, and they should be treated as such by all cat owners.
                             </p>
                             <div className="profile">
-                                <img src="public/Images/Members/GambePFP.jpg" className="profile-pic" alt="Gabriel" />
+                                <img src={`${import.meta.env.BASE_URL}Images/Members/GambePFP.jpg`} className="profile-pic" alt="Gabriel" />
                                 <div className="profile-name">
                                     <span className="last-name">GAMBE,</span>
                                     <span className="first-name">Gabriel Paul Auren Z.</span>
@@ -148,8 +148,8 @@ function About() {
                 </Carousel.Item>
             </Carousel>
 
-            <img src="public/Images/squigly about.png" alt="bot left squigly" className="bot-left-squig" />
-            <img src="public/Images/loop about.png" alt="bot right loop" className="bot-right-loop" />
+            <img src={`${import.meta.env.BASE_URL}Images/squigly about.png`} alt="bot left squigly" className="bot-left-squig" />
+            <img src={`${import.meta.env.BASE_URL}Images/loop about.png`} alt="bot right loop" className="bot-right-loop" />
         </div>
     );
 }

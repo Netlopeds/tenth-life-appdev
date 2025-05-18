@@ -22,13 +22,13 @@ function Welcome() {
                         <Col md={6} sm={12} xs={12} className="left-banner-content">
                             <p className="banner-description">Give them a Paw-Some Time!</p>
                             <Button variant="dark" className="shop-now-btn mt-3" onClick={() => navigate('/shop')}>
-                                Shop Now <span className="ms-2"><Image id="shop-arrow" src="/Images/shop_now_arrow.png" alt="arrow" fluid rounded /></span>
+                                Shop Now <span className="ms-2"><Image id="shop-arrow" src={`${import.meta.env.BASE_URL}Images/shop_now_arrow.png`} alt="arrow" fluid rounded /></span>
                             </Button>
                             <p className="satisfied-text">Below are some Satisfied Meow-stomers!</p>
-                            <Image src="/Images/Big Paw Print.png" alt="Paw Prints" className="big-paw-print"/>
+                            <Image src={`${import.meta.env.BASE_URL}Images/Big Paw Print.png`} alt="Paw Prints" className="big-paw-print"/>
                         </Col>
                         <Col md={6} sm={12} xs={12} className="p-0"> 
-                                <Image src="/Images/cat_cropped.png" alt="Cat Eating" className="cat-eating-img"/>
+                                <Image src={`${import.meta.env.BASE_URL}Images/cat_cropped.png`} alt="Cat Eating" className="cat-eating-img"/>
                         </Col>
                     </Row>
                 </div>
@@ -36,22 +36,22 @@ function Welcome() {
                 <Row className="card-row mt-5 justify-content-center">
                     {[
                         {
-                            img: "/Images/cat playing toy.jpg",
+                            img: `${import.meta.env.BASE_URL}Images/cat playing toy.jpg`,
                             text: "This playful kitty loves chewing on its favorite plush toy! Great for teething relief and endless fun."
                         },
                         {
-                            img: "/Images/cat playing toy 2.jpg",
+                            img: `${import.meta.env.BASE_URL}Images/cat playing toy 2.jpg`,
                             text: "Energetic and full of life, this kitten can’t get enough of its colorful feather wand. Ideal for interactive playtime!"
                         },
                         {
-                            img: "/Images/cat playing toy 3.webp",
+                            img: `${import.meta.env.BASE_URL}Images/cat playing toy 3.webp`,
                             text: "Always on the lookout, this curious cat rules its climbing tower kingdom. Perfect for cats that love to perch and pounce."
                         }
                     ].map((card, index) => (
                         <Col md={3} key={index}>
                             <Card className="card h-100 text-center border-0 position-relative">
                                 <div className="heart-icon-placeholder">
-                                    <Image src="/Images/heart.png" alt="Heart" width={20} height={20} />
+                                    <Image src={`${import.meta.env.BASE_URL}Images/heart.png`} alt="Heart" width={20} height={20} />
                                 </div>
                                 <Card.Img variant="top" src={card.img} alt={`Cat ${index + 1}`} />
                                 <Card.Body>
@@ -66,7 +66,7 @@ function Welcome() {
                     <Col md={1} className="text-center">
                         <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                             <Button id ="about-btn" variant="outline-dark" style={{ borderRadius: "50%", width: "80px", height: "80px", padding: "0", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5rem"}} onClick={() => navigate('/about')}>
-                                <Image src="/Images/About_us_arrow.png" alt="arrow" fluid rounded />
+                                <Image src={`${import.meta.env.BASE_URL}Images/About_us_arrow.png`} alt="arrow" fluid rounded />
                             </Button>
                             <div className ="about-btn-text" style={{ marginTop: "8px", fontSize: "1rem", fontWeight: "bold" }}>
                                 About Us
